@@ -1,0 +1,186 @@
+/* ==========================
+All Sections 
+===========================*/
+* {
+	color: #000;
+}
+/* Change all texts to black */
+
+body {
+	background: none repeat scroll 0 0 #fff;
+/* background: is shorthand for background-image, background-repeat, background-attachment, background-position, and backgroundund-color.*/
+/* Why are we making rules for background even though we don't have any? Since we don't have any background image, I am not seeing any difference from earlier to the refreshed */
+	color: #222;
+/* Change color to lighter black */
+	margin: 0;
+/* Everything moved toward the left since there is no more margin */
+	}
+
+a {
+	color:#222;
+/* Change color of all texts inside the a element to lighter black */
+	text-decoration: none;
+/* Underline in texts are now removed */	
+}
+
+a:hover {
+	color: #222;
+	text-decoration: underline;
+/* Change color of all texts inside the a element when hovered to lighter black.  
+When you mouse over the text inside the a tag, it's showing underline. */
+}
+
+a.button: hover {
+	text-decoration: none;
+}
+/* Not sure exactly what this does.  Will come back to it */
+
+/* ==============================
+Top section - Navigation 
+================================*/
+
+
+.top-navigation {
+	float: right;
+	/* All children of .top-navigation class moved all the way to the right */
+	margin-right: 25px;
+	/* Right margin became bigger and all children moved a little to the left */ 
+}
+
+.top-navigation li {
+	list-style: none; /* Deleted the bullet point in li elements of top-navigation selector */
+	display: inline-block; /*The list appeared horizontally in one line */
+	text-align: right; /* No noticible difference, but text should be alined to the right in the block*/
+	padding: 5px 10px 0 0; /*Padding was given to the top and right.  This resulted in creating more space to the element next to one */
+	vertical-align: bottom; /*No noticeble difference, but the bottom of the element should be aligned with the lowest element on the line*/
+	margin: 5px 5px 0 0; /* This increased the space on top and right of the box.  All elements are a little more further apart and some more space on top */
+	font-size: 13px; /*Changing to a smaller font size */
+}
+
+.fa {
+	font-size: 20px; /* Enlarging the awesome fonts of fa selectors */
+	vertical-align: top; /* No noticible difference, but the top of the elemnt should be aligned with the top element on the line*/
+	opacity: 0.7; /* Less opaque @ 70% than before */
+	cursor: default; /* this sets the cursor icon as the direction icon.  Other examples are : help; (question mark icon) etc. */
+}
+
+.fa:hover {
+	opacity: 1.0; /* Bring back the opacity to 100% when hovered */
+}
+
+.share-button {
+	background-color: #f2f2f2; /* Added a greish background color */
+	padding: 7px 15px; /* Added padding and enlarged the container */
+	cursor: default; /* Kept the cursor icon as the direction icon */
+	position: relative; /* No noticible difference, but position is reletive to its normal position.  Other examples include absolute, fixed etc */
+	top: -3px; /* Removed the top by 3px. As a result, the box moved up. */
+}
+
+.share-button:hover {
+	background-color: #E1E1E1; /* Changed the background color to darker grey when hovered */
+}
+
+.profile-img {
+	border-radius: 25px; /* Corner of the image became round */
+	height: 32px; /* Set the height of the image to 32px */
+	width: 32px;	/* Set the width of the image to 32px */
+	position: relative; /*No noticible difference but position is lreative to its normal position */
+	top: 5px; /* Added top by 5px bringing doww the image */
+}
+
+/* =================================
+Middle Section - Search Box
+=================================== */
+.search-box {
+	position: absolute; /* Below section texts covering over the middle section.  Need to learn more what this does */
+	margin-top: 75px; /* Added margin. Search box moved down by 75px */
+	width: 100%; /* No noticible difference.  Box width remains at 100% */
+}
+
+.search-box img { /* find img in search-box selector */
+	padding: 142px 0 24px 0; /* Added padding around the image. Top by 142px and bottom by 24px */
+	display: block; /* Changed from inline element to block element.  Resulted in moving the search box down to a separate line */
+	margin: 0 auto; /* Search box moved to the center.  0 margin for top & bottom.  auto put the search box in the middle */
+}
+
+.search-box input { /* find input in search-box selector*/
+	width: 600px; /* input box became wider */
+	margin: 0 auto; /* No noticible difference.  0 margin for top & bottom and centerlized in width. */
+	padding: 5px; /* Added padding, enlarging the space between the input and the border by 5px*/
+	border: 1px solid #d9d9d9; /* Changed the boarder down to 1px,  with solid grey */
+	font-size: 16px; /* text size changed resulting in a bigger box */
+	border-radius: 5px; /* Search-box corner became round */
+	display: block; /* Changed from inline element to block element resulting in box placement in the center */
+}
+
+.search-box input: focus {
+	border-color: #f5f5f5; /* Need to check on this. No noticible differene */
+}
+
+.search-button {
+	text-align: center; /* Moved the buttons to the middle */
+	padding-left: 0; /* No noticible difference but set left-side of padding to 0 */
+}
+
+.search-button button { /* Find button under the search-button selector */
+	background-color: #f5f5f5;  /* Changed the background color of the box to grey */
+	border: 1px solid rgba(0, 0, 0, 0.1); /*. Changed to a thinner solid more whitish border */
+	border-radius: 2px; /* Changed the corner of the border to round */
+	color: #666; /* Texts of the boxes changed to more lighter color */
+	font-size: 14px; /* Changed font-size of the texts of the boxes to bigger size */
+	font-weight: bold; /* Changed text of the boxe to bold */
+	line-height: 27px; /* Created more space above and below the texts */
+	margin: 17px 6px; /* Created some space outside of boxes resulting in more space between other elements */
+	padding: 0 12px; /* The boxes became narrower in height but wider in width */
+	display: inline-block; /* Changed from inline element to inline-block element */
+	cursor: pointer; /* When cursor gets close to the boxes, the pointer icon (index finter) show up */
+ }
+
+ .search-button button:hover{
+ 	background-color: f8f8f8; /* No noticible difference, but when button is hover, the background color changed to grey */
+ 	border: 1px solid #c6c6c6; /* No noticible difference, but when button is hovered, a thicker black solid border appeared */
+ 	box-shadow: 0 1px 1px rgba(0,0,0, 0.1); /* -shadow v-shadow blur color */
+	color: #333; /* When hovered, the text color changes darker*/
+}
+/* ==============================
+Bottom Section - Site Links 
+================================*/
+
+.bottom-site-links {
+	bottom: 0 !important; /* No visible difference.  Significance of important is unclear */
+	position: absolute; /* Moved all the way down in the page*/
+	width: 100%; /* The element box stretched all the way across in the screen */
+	background-color: #f2f2f2; /* Background now becomes gray */
+	border-top: 1px solid #e4e4e4; /* Solid border in grey*/
+}
+
+.left-site-links {
+	float: left; /* All left site links moved to the left */
+	padding-left: 20px;  /* Decreased padding resulting in moving toward left */
+}
+
+.right-site-links {
+	float: right; /* All right site links moved to the right */
+	padding-right: 10px; /* Increased padding and links moved toward left */
+}
+
+.left-site-links li, .right-site-links li {
+	list-style: none; /* All bullet points disappeared */
+	display: inline; /* Each list became inline element */
+	line-height: 40px; /* Height became longer */
+}
+
+.right-site-links li a:first-child {
+	padding-right: 8px; /* First child "privacy" has more space on the right */
+}
+
+.left-site-links li:nth-child(2), .left-site-links li:nth-child(3){
+	margin-left: 7px; /* Changed 2nd and 3rd children and now have more space between the children */
+}
+
+.left-site-links li a, .right-site-links li a {
+	color: #666; /* Color changed to grey */
+	margin: 2px 10px 0; /* Changed the margin to top 2px, left & right 10px, bottom 0.  How do we distinguish between li and a margin change?*/
+	letter-spacing: 0.1px; /* Changed space between letters to 0.1px */
+	font-size: 14px; /* Decreased font size to 14px*/
+}
