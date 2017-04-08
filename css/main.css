@@ -184,3 +184,50 @@ Bottom Section - Site Links
 	letter-spacing: 0.1px; /* Changed space between letters to 0.1px */
 	font-size: 14px; /* Decreased font size to 14px*/
 }
+
+/* ==============================
+   Responsive Design
+================================*/
+
+@media (max-width: 725px) {
+	.search-box input {
+			width: 75%;
+	}
+}
+
+@media (max-width: 522px) {
+	.right-site-links {
+		display: none;
+	}
+
+	.left-site-links {
+		margin: 10px auto;
+		width: 60%;
+		float: none;
+	}
+}
+
+@media (max-width: 424px) {
+	.top-navigation {
+		margin-right: 0;
+	}
+	
+	.profile-img {
+		display: none;
+	}
+
+	.top-navigation li {
+		margin: 0;
+		font-size: 12px;
+	}
+		.left-site-links {
+		width: 70%;
+	}
+}
+
+@media (max-width: 360px) {
+		.left-site-links {
+		width: 80%;
+	}
+}
+
